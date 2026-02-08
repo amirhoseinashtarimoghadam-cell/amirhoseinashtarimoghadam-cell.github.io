@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>پنل عملیات چاپخانه</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --gold: #c5a021;
+      --danger: #dc2626;
+      --bg: #f4f7fa;
+      --text: #334155;
+      --border: #e2e8f0;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background-color: var(--bg);
+      font-family: Tahoma, sans-serif;
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 40px;
+      color: #1e293b;
+      border-right: 3px solid var(--primary);
+      padding-right: 14px;
+      letter-spacing: 0.3px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 28px 12px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .card i {
+      font-size: 30px;
+      color: #64748b;
+      transition: color 0.2s ease;
+    }
+
+    .card:hover {
+      background-color: #fbfdff;
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
+    }
+
+    .card:hover i {
+      color: var(--primary);
+    }
+
+    /* استایل‌های اختصاصی */
+    .gold i { color: var(--gold); }
+    .die i { color: var(--danger); }
+
+    @media (max-width: 500px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>پنل عملیات چاپخانه</h1>
+
+    <div class="grid">
+
+      <a class="card" href="https://script.google.com/macros/s/AKfycby8IPonL_lTF8Zam7A2ZA8SNz7Iby0vCfIpY6GdMjJVwWhEu3ct1MxvmUbQGHsmG5P_wA/exec"_blank">
+        <i class="fa-solid fa-clipboard-list"></i>
+        ثبت سفارش
+      </a>
+
+      <a class="card" href="https://script.google.com/macros/s/AKfycby8IPonL_lTF8Zam7A2ZA8SNz7Iby0vCfIpY6GdMjJVwWhEu3ct1MxvmUbQGHsmG5P_wA/exec?view=edit" target="_blank">
+        <i class="fa-solid fa-pen-ruler"></i>
+        ادیت و آماده‌سازی
+      </a>
+
+      <a class="card gold" href="https://script.google.com/macros/s/AKfycby8IPonL_lTF8Zam7A2ZA8SNz7Iby0vCfIpY6GdMjJVwWhEu3ct1MxvmUbQGHsmG5P_wA/exec?view=gold" target="_blank">
+        <i class="fa-solid fa-gem"></i>
+        طلاکوب
+      </a>
+
+      <a class="card die" href="https://script.google.com/macros/s/AKfycby8IPonL_lTF8Zam7A2ZA8SNz7Iby0vCfIpY6GdMjJVwWhEu3ct1MxvmUbQGHsmG5P_wA/exec?view=cut" target="_blank">
+        <i class="fa-solid fa-crop-simple"></i>
+        تیغ و دایکات
+      </a>
+
+      <a class="card" href="LINK_CELLOPHANE" target="_blank">
+        <i class="fa-solid fa-clone"></i>
+        سلفون
+      </a>
+
+      <a class="card" href="LINK_DELIVERY_JOB" target="_blank">
+        <i class="fa-solid fa-truck-ramp-box"></i>
+        تحویل کار
+      </a>
+
+      <a class="card" href="LINK_DELIVERY_MOLD" target="_blank">
+        <i class="fa-solid fa-shapes"></i>
+        تحویل قالب
+      </a>
+
+      <a class="card" href="LINK_DELIVERY_CLICHE" target="_blank">
+        <i class="fa-solid fa-stamp"></i>
+        تحویل کلیشه
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
